@@ -1,5 +1,5 @@
 /**
- * cc -l pthread -Wall -O3 -s -o tb-tun tb-userspace.c
+ * cc -l pthread -Wall -O3 -s -o tb-tun tb-tun.c
  */
 
 #include <stdio.h>
