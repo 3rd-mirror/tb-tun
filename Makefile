@@ -1,15 +1,17 @@
 CC ?= gcc
 DESTDIR ?= /usr/local
+SRC ?= src/tb-tun.c
+BIN ?= tb-tun
 
-all: tb-tun.c
-	$(CC) -O3 -l pthread -o tb-tun tb-tun.c
+all: $(SRC)
+	$(CC) -O3 -l pthread -o $(BIN) $(SRC)
 
-install: tb-tun
+install: $(BIN)
 	install -d $(DESTDIR)/bin/
-	install tb-tun $(DESTDIR)/bin/
+	install $(BIN) $(DESTDIR)/bin/
 
 uninstall:
-	rm -f $(DESTDIR)/bin/tb-tun
+	rm -f $(DESTDIR)/bin/$(BIN)
 
 clean:
-	rm -f tb-tun
+	rm -f $(BIN)
