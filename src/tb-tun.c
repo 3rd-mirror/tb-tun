@@ -1,7 +1,3 @@
-/**
- * cc -l pthread -Wall -O3 -s -o tb-tun tb-tun.c
- */
-
 #include <stdio.h>
 #include <unistd.h>
 #include <net/if.h>
