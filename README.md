@@ -4,7 +4,7 @@ tb-tun is an tiny userspace program to build 6to4/tunnelbroker/ISATAP tunnel for
 The host kernel should have ipv6 stack and supports TUN/TAP.  
 Generally the program should run with the root privilege.  
 
-## How to use?
+## Usage
 
 ```bash
 # Only for OpenVZ VPS
